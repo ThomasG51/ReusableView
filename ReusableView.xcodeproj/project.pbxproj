@@ -13,6 +13,8 @@
 		7E690B5E2A740C0000175233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E690B5C2A740C0000175233 /* Main.storyboard */; };
 		7E690B602A740C0100175233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E690B5F2A740C0100175233 /* Assets.xcassets */; };
 		7E690B632A740C0100175233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E690B612A740C0100175233 /* LaunchScreen.storyboard */; };
+		7E690B6B2A740C7100175233 /* BlueHeaderShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E690B6A2A740C7100175233 /* BlueHeaderShadowView.swift */; };
+		7E690B6D2A74138500175233 /* YellowGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E690B6C2A74138500175233 /* YellowGradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7E690B5F2A740C0100175233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E690B622A740C0100175233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E690B642A740C0100175233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E690B6A2A740C7100175233 /* BlueHeaderShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueHeaderShadowView.swift; sourceTree = "<group>"; };
+		7E690B6C2A74138500175233 /* YellowGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowGradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				7E690B5F2A740C0100175233 /* Assets.xcassets */,
 				7E690B612A740C0100175233 /* LaunchScreen.storyboard */,
 				7E690B642A740C0100175233 /* Info.plist */,
+				7E690B6A2A740C7100175233 /* BlueHeaderShadowView.swift */,
+				7E690B6C2A74138500175233 /* YellowGradientView.swift */,
 			);
 			path = ReusableView;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				7E690B5B2A740C0000175233 /* ViewController.swift in Sources */,
 				7E690B572A740C0000175233 /* AppDelegate.swift in Sources */,
 				7E690B592A740C0000175233 /* SceneDelegate.swift in Sources */,
+				7E690B6D2A74138500175233 /* YellowGradientView.swift in Sources */,
+				7E690B6B2A740C7100175233 /* BlueHeaderShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +301,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +310,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ThomasG51.ReusableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +332,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +341,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ThomasG51.ReusableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
